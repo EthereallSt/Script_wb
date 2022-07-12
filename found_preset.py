@@ -1,7 +1,8 @@
 import csv
 
-presets= [0]
-presets_repeat= []    # в этот список я добавлю все пресеты которые соберу с файла.
+presets= [0]          # список всех пресетов
+presets_repeat= []    # список повторяющихся пресетов
+
 
 def found_preset():     # Эта функция проходит по файлу csv построчно и добавляет в список пресеты
     with open('result_copy.csv', newline='') as f:
@@ -11,7 +12,7 @@ def found_preset():     # Эта функция проходит по файлу
                 presets.append(int(stringg[1]))
 
 
-def found_repeat_presets(presets):
+def found_repeat_presets(presets):  #фун. для поиска и подсчёта всех повторяющихся пресетов из списка
     counter = {}
 
     for elem in presets:
@@ -21,7 +22,7 @@ def found_repeat_presets(presets):
     return(doubles)
 
 
-def get_repeat_numbers(presets):
+def get_repeat_numbers(presets):    #фун. для создания всех уникальных пресетов из списка
     repeat = []
     unice = []
 
@@ -31,6 +32,7 @@ def get_repeat_numbers(presets):
         else:
             unice.append(number)
     return repeat
+
 
 found_preset()
 print(found_repeat_presets(presets))
