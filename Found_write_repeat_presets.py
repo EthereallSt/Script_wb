@@ -1,4 +1,3 @@
-import csv
 from optparse import Values
 
 
@@ -24,14 +23,12 @@ result = {elem: count for elem, count in result.items() if len(count) > 1}
 
 pok = []
 for key, value in result.items():
-    obraz = value[0]
     for i in value:
-        if i!= obraz:
-            pok.append(i)
-        obraz = i
+        pok.append(i)
+
 
 def write_file(pok):        # Собирает файл из списка.
-    f = open( 'итоги.txt', 'w' )
+    f = open( 'итоги_полный_файл.txt', 'w' )
     f.write("".join(pok))
     f.close
     
