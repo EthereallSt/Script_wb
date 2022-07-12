@@ -1,11 +1,11 @@
 import csv
 
-presets= [0]          # список всех пресетов
-presets_repeat= []    # список повторяющихся пресетов
+presets= [0]          # список всех пресетов 
+zap = []              # список cтрок с повторяющимися пресетами
 
 
-def found_preset():     # Эта функция проходит по файлу csv построчно и добавляет в список пресеты
-    with open('result_copy.csv', newline='') as f:
+def found_preset():     # Эта функция проходит по файлу csv построчно и пополняет список(presets)
+    with open('result.csv', newline='') as f:
         reader = csv.reader(f, delimiter='|')
         for stringg in reader:
             if len(stringg[1]):
@@ -18,22 +18,19 @@ def found_repeat_presets(presets):  #фун. для поиска и подсчё
     for elem in presets:
         counter[elem] = counter.get(elem, 0) + 1
 
-    doubles = {element: count for element, count in counter.items() if count > 1}
-    return(doubles)
+    pepa=[element for element, count in counter.items() if count > 1]
+    return(pepa)
 
 
-def get_repeat_numbers(presets):    #фун. для создания всех уникальных пресетов из списка
-    repeat = []
-    unice = []
-
-    for number in presets:
-        if number in unice:
-            repeat.append(number)
-        else:
-            unice.append(number)
-    return repeat
-
+'''
+for i in repeat:     #функция для добавления всех записей с одним пресетом в список
+    with open('result_copy.csv', newline='') as f:
+        reader = csv.reader(f, delimiter='|')
+        for stringg in reader:
+            if str(i) == stringg[1]:
+                zap.append(stringg[1])
+'''
 
 found_preset()
-print(found_repeat_presets(presets))
-print(get_repeat_numbers(presets))
+repeat = found_repeat_presets(presets)
+print(repeat) #(34109)
