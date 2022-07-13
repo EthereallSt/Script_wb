@@ -1,0 +1,5 @@
+(ошибка) (intel)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query="процессор intel"|presets/bucket_603|preset=10093869|()
+(другой квери) (intel)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query=" intel"|presets/bucket_603|preset=10093869|()
+(правильно) (intel)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query="процессор intel"|presets/bucket_603|preset=10093869|()
+(родительская)|10063122|yes|common||elasticsearch|--context-brand="samsung" --context-subject="чехол для телефона" --query="чехол на samsung j7 2017" --irrelevant-score-percent=0 --filter="subjectId:(390 OR 1342 OR 1529 OR 2800 OR 3820 OR 4388 OR 5696)"|presets/bucket_615|preset=10063122|()
+(дочерняя)|10063122|yes|common||elasticsearch|--context-brand="samsung" --context-subject="чехол для телефона" --query="чехол на samsung j7 2017" --irrelevant-score-percent=0 --filter="subjectId:(390 OR 1342 OR 1529 OR 2800 OR 3820 OR 4388 OR 5696)"|presets/bucket_615|preset=10063122|()
