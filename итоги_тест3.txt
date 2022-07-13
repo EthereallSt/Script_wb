@@ -1,4 +1,0 @@
-(ошибка)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query="процессор intel"|presets/bucket_603|preset=10093869|()
-(другой квери)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query=" intel"|presets/bucket_603|preset=10093869|()
-(правильно)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query="процессор intel"|presets/bucket_603|preset=10093869|()
-(ошибка)|10093869|yes|common||elasticsearch|--context-brand="intel" --context-subject="процессор" --query="процессор intel"|presets/bucket_603|preset=10093869|()
