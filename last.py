@@ -1,27 +1,33 @@
 presets =[]     #список пресетов
 itog =[]        #список куда запишем все строки соответствующие условиям
-zapross =[]     #список человеческих запросов
+buckets =[]     #список человеческих запросов
 querys = []     #список квери
 
 with open("trol.txt", newline='') as f:
     for line in f:
         preset = line.split("|")[1]
-        zapros = line.split("|")[0]
+        bucket = line.split("|")[7]
         query = line.split("|")[6]
-        if preset not in presets:
-            presets.append(preset)
-            zapross.append(zapros)
+        
+        if query not in querys and bucket not in buckets:
             querys.append(query)
+            buckets.append(bucket)
+            
         else:
-            if zapros not in zapross:
-                if query not in querys:
-                    itog.append(line)
+            if bucket in buckets and query not in querys:
+                querys.append(query)
+                itog.append(line)
+
+        #else:
+        #    if zapros not in zapross:
+        #        if query not in querys:
+        #            itog.append(line)
 
 
 
-def write_file(znachen):        # Собирает файл из списка.
-    f = open( 'querys.txt', 'w' )
-    f.write("".join(znachen))
+def write_file(itog):        # Собирает файл из списка.
+    f = open( 'itog.txt', 'w' )
+    f.write("".join(itog))
     f.close
     
 write_file(itog)

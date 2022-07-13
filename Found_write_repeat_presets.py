@@ -1,7 +1,7 @@
 
 def found_presets():
     stroks = []
-    with open('test.csv', newline='') as f:
+    with open('result.csv', newline='') as f:
             reader = f.readlines()
             for stringg in reader:
                 if len(stringg.split('|')[1]):
