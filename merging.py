@@ -5,7 +5,7 @@ import glob
 
 file_list = glob.glob("*.csv")
 
-with open('result.csv', 'w') as f:
+with open('общий.csv', 'w') as f:
     input_lines = fileinput.input(file_list)
     f.writelines(input_lines)
 
