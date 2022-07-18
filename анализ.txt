@@ -1,0 +1,2 @@
+(столик тест удачно1 для завтрака)|200000016|yes|common||elasticsearch|--query="столик для завтрака" --max-product=35000|presets/bucket_600|preset=200000016|()
+(компливит)|200000016|yes|common||elasticsearch|--query="компливит" --max-product=35000|presets/bucket_316|preset=200000016|()
