@@ -45,7 +45,7 @@ with open("все_записи_с_повторным_пресетом.txt", newl
 
 
 def write_file(itog):        # Собирает файл из списка.
-    f = open( 'itog.txt', 'w' )
+    f = open( 'финальный.txt', 'w' )
     f.write("".join(itog))
     f.close
     
