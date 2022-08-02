@@ -1,6 +1,5 @@
 (гелевые типсы для ногтей)|200008934|yes|common||elasticsearch|--context-subject="типс" --query="гелевые типсы для ногтей" --max-product=35000|presets/bucket_222|preset=200008934|()
 (очечник женский)|200000005|yes|common||elasticsearch|--query="очечник женский" --max-product=35000|presets/bucket_582|preset=200000005|()
-(стикеры геншин)|200008936|yes|common||elasticsearch|--context-subject="стикеры" --query="стикеры геншин" --max-product=35000|presets/bucket_229|preset=200008936|()
 (набор парню)|200008937|yes|common||elasticsearch|--query="набор парню" --max-product=35000|presets/bucket_222|preset=200008937|()
 (именные подарки андрей)|200000013|yes|common||elasticsearch|--query="именные подарки андрей" --max-product=35000|presets/bucket_542|preset=200000013|()
 (какао золотой ярлык)|200000012|yes|common||elasticsearch|--query="какао золотой ярлык" --max-product=35000|presets/bucket_334|preset=200000012|()
